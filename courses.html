@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineering Courses</title>
+  <link rel="stylesheet" href="../CSS/courses.css">
+</head>
+<body>
+  <!-- Main content of the page goes here -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Software Engineering Courses</h4>
+        <div class="course-category">
+          <button class="category-toggle" onclick="toggleCategory('frontend')">Frontend Development</button>
+          <ul class="course-list" id="frontend">
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Vue.js</a></li>
+            <li><a href="#">Angular</a></li>
+          </ul>
+        </div>
+        <div class="course-category">
+          <button class="category-toggle" onclick="toggleCategory('backend')">Backend Development</button>
+          <ul class="course-list" id="backend">
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">Django</a></li>
+            <li><a href="#">Ruby on Rails</a></li>
+            <li><a href="#">Spring Boot</a></li>
+            <li><a href="#">ASP.NET</a></li>
+          </ul>
+        </div>
+        <div class="course-category">
+          <button class="category-toggle" onclick="toggleCategory('devops')">DevOps</button>
+          <ul class="course-list" id="devops">
+            <li><a href="#">Docker</a></li>
+            <li><a href="#">Kubernetes</a></li>
+            <li><a href="#">CI/CD</a></li>
+            <li><a href="#">AWS</a></li>
+            <li><a href="#">Azure</a></li>
+          </ul>
+        </div>
+        <div class="course-category">
+          <button class="category-toggle" onclick="toggleCategory('databases')">Databases</button>
+          <ul class="course-list" id="databases">
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">NoSQL</a></li>
+            <li><a href="#">PostgreSQL</a></li>
+            <li><a href="#">MongoDB</a></li>
+            <li><a href="#">Firebase</a></li>
+          </ul>
+        </div>
+        <div class="course-category">
+          <button class="category-toggle" onclick="toggleCategory('mobile')">Mobile Development</button>
+          <ul class="course-list" id="mobile">
+            <li><a href="#">iOS Development</a></li>
+            <li><a href="#">Android Development</a></li>
+            <li><a href="#">Flutter</a></li>
+            <li><a href="#">React Native</a></li>
+            <li><a href="#">Xamarin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../HelonTech.js"></script>
+</body>
+</html>

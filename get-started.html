@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineering School - Registration</title>
+  <link rel="stylesheet" href="../CSS/get-started.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Welcome to HelonTech Software Engineering School</h1>
+      <button class="get-started-btn" onclick="showRegistrationForm()">Get Started</button>
+    </div>
+  </header>
+
+  <section id="registration-form" class="registration-form hidden">
+    <div class="container">
+      <h2>Register Now</h2>
+      <form action="/submit-registration" method="POST">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="course">Course Interested In</label>
+        <select id="course" name="course" required>
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="devops">DevOps</option>
+          <option value="databases">Databases</option>
+          <option value="mobile">Mobile Development</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="../HelonTech.js"></script>
+</body>
+</html>
